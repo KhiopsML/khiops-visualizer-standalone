@@ -1,0 +1,111 @@
+.visu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.visu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  width: 190px;
+  height: 60px;
+  z-index: 5;
+}
+
+.visu > .btn-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+
+.home {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Poppins" !important;
+}
+
+.home * {
+  box-sizing: border-box;
+}
+
+.home label {
+  font-weight: bold;
+  display: block;
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+.home .input {
+  padding: 30px;
+}
+
+.home .btn-footer {
+  padding: 0 30px 30px;
+  text-align: center;
+}
+
+.home .file,
+.home .link {
+  border: 0.125rem solid #333;
+  margin: 15px;
+}
+
+.home input {
+  display: block;
+  width: 100%;
+  padding: calc(0.5rem - 1px) 0.625rem calc(0.5rem + 1px);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0.125rem solid #ccc;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  transition: border-color 0.2s ease-in-out, outline-offset 0.2s ease-in-out;
+  width: 400px;
+}
+
+.home .btn,
+.visu > .btn-container .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: 0.125rem solid #ff7900;
+  outline-offset: 0.3125rem;
+  --o-icon-spacing: 0.5rem;
+  padding: calc(0.5rem - 1px) 1.125rem calc(0.5rem + 1px);
+  font-size: 1rem;
+  border-radius: 0;
+  transition: outline-offset 0.2s ease-in-out;
+  color: #000;
+  background-color: #ff7900;
+}
+
+.home .btn:hover,
+.visu > .btn-container .btn:hover {
+  color: #fff;
+  background-color: #000;
+  border-color: #000;
+}
