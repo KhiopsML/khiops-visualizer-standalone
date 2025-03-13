@@ -34,4 +34,4 @@ jobs:
         run: mkdir -p dist
 
       - name: Copy build to dist directory
-        run: cp -r build/* dist/
+        run: cp -r dist/* dist/
