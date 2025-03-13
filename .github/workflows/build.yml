@@ -29,12 +29,3 @@ jobs:
         with:
           name: build
           path: dist
-
-      - name: Create dist directory if it does not exist
-        run: mkdir -p dist
-
-      - name: Clear dist directory if not empty
-        run: rm -rf dist/*
-
-      - name: Copy build to dist directory
-        run: cp -r dist/* dist/
