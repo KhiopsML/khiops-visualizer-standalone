@@ -2,7 +2,7 @@
 
 Standalone Visualizer for automl.tech.orange
 
-<img src="https://raw.githubusercontent.com/KhiopsML/khiops-visualizer-standalone/refs/heads/main/public/demo.png"/>
+<img src="https://raw.githubusercontent.com/KhiopsML/khiops-visualizer-standalone/refs/heads/main/public/demo.png" width="360"/>
 
 ## Development server
 
