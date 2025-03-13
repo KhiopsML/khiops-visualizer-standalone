@@ -4,6 +4,14 @@ Standalone Visualizer for automl.tech.orange
 
 <img src="https://raw.githubusercontent.com/KhiopsML/khiops-visualizer-standalone/refs/heads/main/public/demo.png" width="360"/>
 
+## Usage
+
+Load a file locally, from an url or passed as parameter :
+
+```
+http://{url}/public/?url={url-encoded}
+```
+
 ## Development server
 
 To start a local development server, run:
