@@ -93,11 +93,13 @@ export class AppComponent {
 
   changeLocalFile(event: any) {
     var file = event.target.files[0];
-    var reader = new FileReader();
-    reader.onload = (e) => {
-      this.localFileContents = JSON.parse(e.target?.result?.toString()!);
-    };
-    reader.readAsText(file);
+    setTimeout(() => {
+      var reader = new FileReader();
+      reader.onload = (e) => {
+        this.localFileContents = JSON.parse(e.target?.result?.toString()!);
+      };
+      reader.readAsText(file);
+    });
   }
 
   openFromUrl() {
