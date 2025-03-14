@@ -42,7 +42,8 @@
           },
           "configurations": {
             "production": {
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "/public/"
             },
             "development": {
               "optimization": false,

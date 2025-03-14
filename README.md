@@ -46,10 +46,12 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Configuration
 
-To configure the base url of the application, update index.html base:
+To configure the base url of the producation application, update index.html base:
 
-```html
-<base href="/public/" />
+```json
+    "production": {
+        "baseHref": "/public/"
+    },
 ```
 
 **and re-run build**
