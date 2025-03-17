@@ -25,7 +25,7 @@ jobs:
         run: npm run build
 
       - name: Zip dist folder
-        run: cd ./dist/khiops-visualizer-standalone/browser && zip -r ../../../../compiled_code.zip ./*
+        run: zip -r compiled_code.zip ./dist
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
