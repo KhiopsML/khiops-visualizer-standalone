@@ -26,12 +26,6 @@ jobs:
       - name: Build Angular project
         run: npm run build --prod
 
-      - name: Create Release Tag
-        run: |
-          VERSION=$(node -p "require('./package.json').version")
-          git tag "v$VERSION"
-          git push origin "v$VERSION"
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
