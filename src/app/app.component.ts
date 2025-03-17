@@ -65,13 +65,15 @@ export class AppComponent {
         const jsonData = fileData;
         if (jsonData.tool === 'Khiops') {
           this.showKhiopsVisualization = true;
+
           setTimeout(() => {
+            //@ts-ignore
+            this.visualizationComponent?.nativeElement.setDatas(jsonData);
+
             //@ts-ignore
             this.visualizationComponent?.nativeElement.setConfig({
               showProjectTab: false,
             });
-            //@ts-ignore
-            this.visualizationComponent?.nativeElement.setDatas(jsonData);
           });
         } else if (jsonData.tool === 'Khiops Coclustering') {
           this.showKhiopsCovisualization = true;
@@ -111,8 +113,8 @@ export class AppComponent {
   }
 
   close() {
-    this.showKhiopsVisualization = false;
-    this.showKhiopsCovisualization = false;
+    // Hack to reload the page and prevent material components from breaking
+    window.location.reload();
   }
 
   decodeRawKhiopsString(fullUrl?: string) {
