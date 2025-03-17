@@ -2,7 +2,7 @@
 
 Standalone Visualizer for automl.tech.orange
 
-<img src="https://raw.githubusercontent.com/KhiopsML/khiops-visualizer-standalone/refs/heads/main/public/demo.png" width="360"/>
+<img src="https://raw.githubusercontent.com/KhiopsML/khiops-visualizer-standalone/refs/heads/main/doc/demo.png" width="360"/>
 
 ## Usage
 
@@ -27,12 +27,9 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ### From Github Action
 
-build.yml Github Action is automatically launched at each push.
+release.yml Github Action is automatically launched at each push.
 
-Artifact can be found into Upload Build artifact section of:
-https://github.com/KhiopsML/khiops-visualizer-standalone/actions/runs/{run-id}/job/{job-id} interface:
-
-<img src="https://raw.githubusercontent.com/KhiopsML/khiops-visualizer-standalone/refs/heads/main/public/build.png"/>
+Artifact can be found into the releases right panel
 
 ### Locally
 
