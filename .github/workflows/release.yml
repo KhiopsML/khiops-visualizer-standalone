@@ -2,8 +2,6 @@ name: Release Angular App
 
 on:
   push:
-    branches:
-      - main
     tags:
       - "v*"
 
