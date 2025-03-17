@@ -114,6 +114,9 @@ export class AppComponent {
 
   close() {
     // Hack to reload the page and prevent material components from breaking
+    const url = new URL(window.location.href);
+    url.searchParams.delete('url');
+    window.history.replaceState({}, document.title, url.toString());
     window.location.reload();
   }
 
