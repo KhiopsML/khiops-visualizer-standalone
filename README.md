@@ -27,7 +27,7 @@ Once the server is running, open your browser and navigate to `http://localhost:
 
 ### From Github Action
 
-release.yml Github Action is automatically launched at each push.
+release.yml Github Action is automatically launched at each tag pushed.
 
 Artifact can be found into the releases right panel
 
