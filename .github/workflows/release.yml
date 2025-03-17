@@ -24,9 +24,12 @@ jobs:
       - name: Build Angular project
         run: npm run build --prod
 
+      - name: Zip dist folder
+        run: zip -r compiled_code.zip ./dist
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
-          files: ./dist/**/*
+          files: compiled_code.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
