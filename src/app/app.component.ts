@@ -68,23 +68,21 @@ export class AppComponent {
 
           setTimeout(() => {
             //@ts-ignore
-            this.visualizationComponent?.nativeElement.setDatas(jsonData);
-
-            //@ts-ignore
             this.visualizationComponent?.nativeElement.setConfig({
               showProjectTab: false,
             });
+            //@ts-ignore
+            this.visualizationComponent?.nativeElement.setDatas(jsonData);
           });
         } else if (jsonData.tool === 'Khiops Coclustering') {
           this.showKhiopsCovisualization = true;
           setTimeout(() => {
             //@ts-ignore
-            this.covisualizationComponent?.nativeElement.setDatas(jsonData);
-
-            //@ts-ignore
             this.covisualizationComponent?.nativeElement.setConfig({
               showProjectTab: false,
             });
+            //@ts-ignore
+            this.covisualizationComponent?.nativeElement.setDatas(jsonData);
           });
         }
       } catch (error) {
