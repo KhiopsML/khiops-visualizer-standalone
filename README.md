@@ -43,7 +43,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Configuration
 
-To configure the base url of the producation application, update index.html base:
+To configure the base url of the producation application, update index.html base into angular.json baseHref:
 
 ```json
     "production": {
