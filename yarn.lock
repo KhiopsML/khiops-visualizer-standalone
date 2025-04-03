@@ -4562,10 +4562,10 @@ karma@~6.4.0:
     ua-parser-js "^0.7.30"
     yargs "^16.1.1"
 
-khiops-visualization@^11.5.7:
-  version "11.5.7"
-  resolved "https://registry.yarnpkg.com/khiops-visualization/-/khiops-visualization-11.5.7.tgz#fddaa17d164a4e95ddefcb426c35463c244b066c"
-  integrity sha512-xwW2nznQ43hsu0kDODCkSorcUY3WEkIwaXkNZQNSS6Wfvie2DSkisjVeekSFrrt3dLeIFiBpxg78veep99rTSQ==
+khiops-visualization@^11.6.2:
+  version "11.6.2"
+  resolved "https://registry.yarnpkg.com/khiops-visualization/-/khiops-visualization-11.6.2.tgz#bc89ba46f9e3c16eed3a097e1bc0b48001195e47"
+  integrity sha512-HZ4+EjeFB0OZIAkS3Fd6Ba4UV9GbA7EFg5YT/s5m9PNOeJEInEz8F+bE1D8g0pUD/EfAtFBEtaDTNQ+oIrioMA==
 
 kind-of@^6.0.2:
   version "6.0.3"
