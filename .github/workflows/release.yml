@@ -1,5 +1,9 @@
 name: Release Angular App
 
+permissions:
+  contents: read
+  releases: write
+
 on:
   push:
     tags:
