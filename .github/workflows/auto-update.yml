@@ -24,17 +24,21 @@ jobs:
           node-version: 22
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
 
       - name: Update dependencies
         run: |
           npm install -g npm-check-updates
 
-          # Update package.json
+          # Update to latest minor+patch (non-breaking)
           ncu -u --target minor
 
-          # Regenerate yarn.lock based on new versions
-          yarn install
+          # Also apply patch-only updates for packages already at their major
+          ncu -u --target patch
+
+          # Actually upgrade all resolutions in yarn.lock (not just re-read package.json)
+          # yarn upgrade also deduplicates automatically in Yarn Classic
+          yarn upgrade
 
       - name: Create Pull Request
         id: create-pr
