@@ -23,18 +23,26 @@ jobs:
         with:
           node-version: 22
 
-      - name: yarn install
-        run: yarn install
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
 
       - name: Update dependencies
         run: |
           npm install -g npm-check-updates
+
+          # Update to latest minor+patch (non-breaking)
           ncu -u --target minor
-          yarn install
+
+          # Also apply patch-only updates for packages already at their major
+          ncu -u --target patch
+
+          # Actually upgrade all resolutions in yarn.lock (not just re-read package.json)
+          # yarn upgrade also deduplicates automatically in Yarn Classic
+          yarn upgrade
 
       - name: Create Pull Request
         id: create-pr
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.PAT_TOKEN }}
           commit-message: 'chore: update dependencies'
