@@ -36,9 +36,8 @@ jobs:
           # Also apply patch-only updates for packages already at their major
           ncu -u --target patch
 
-          # Actually upgrade all resolutions in yarn.lock (not just re-read package.json)
-          # yarn upgrade also deduplicates automatically in Yarn Classic
-          yarn upgrade
+          # Install dependencies and generate/update yarn.lock
+          yarn install
 
       - name: Create Pull Request
         id: create-pr
