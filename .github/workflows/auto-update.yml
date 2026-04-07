@@ -32,7 +32,6 @@ jobs:
 
           # Update package.json
           ncu -u --target minor
-          ncu -u --target patch
 
           # Regenerate yarn.lock based on new versions
           yarn install
