@@ -343,10 +343,10 @@
   dependencies:
     tslib "^2.3.0"
 
-"@angular/core@^20.3.15":
-  version "20.3.18"
-  resolved "https://registry.yarnpkg.com/@angular/core/-/core-20.3.18.tgz#af91805841184cd87e862134a806bba019d170ea"
-  integrity sha512-B+NQQngd/aDbcfW0zGLis3wTLDeHTeTYMl/mGKQH+HwdPaRCKI1wEtaXaOYVJXkP2FeThocPevB8gLwNlPQUUw==
+"@angular/core@^21.2.7":
+  version "21.2.7"
+  resolved "https://registry.yarnpkg.com/@angular/core/-/core-21.2.7.tgz#70e1a7d155547b7b2a02e224c0534fb830791b0a"
+  integrity sha512-4bnskeRNNOZMn3buVw47Zz9Py4B8AZgYHe5xBEMOY5/yrldb7OFje5gWCWls23P18FKwhl+Xx1hgnOEPSs29gw==
   dependencies:
     tslib "^2.3.0"
 
@@ -4287,9 +4287,9 @@ image-size@~0.5.0:
   integrity sha512-6TDAlDPZxUFCv+fuOkIoXT/V/f3Qbq8e37p+YOiYrUv3v9cc3/6x78VdfPgFVaB9dZYeLUfKgHRebpkm/oP2VQ==
 
 immutable@^5.0.2:
-  version "5.0.3"
-  resolved "https://registry.npmjs.org/immutable/-/immutable-5.0.3.tgz"
-  integrity sha512-P8IdPQHq3lA1xVeBRi5VPqUm5HDgKnx0Ru51wZz5mjxHr5n3RWhjIpOFU7ybkUxfB+5IToy+OLaHYDBIWsv+uw==
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-5.1.5.tgz#93ee4db5c2a9ab42a4a783069f3c5d8847d40165"
+  integrity sha512-t7xcm2siw+hlUM68I+UEOK+z84RzmN59as9DZ7P1l0994DKUWV7UXBMQZVxaoMSRQ+PBZbHCOoBt7a2wxOMt+A==
 
 import-fresh@^3.3.0:
   version "3.3.1"
@@ -4837,9 +4837,9 @@ lodash.debounce@^4.0.8:
   integrity sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow==
 
 lodash@^4.17.21:
-  version "4.17.21"
-  resolved "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
-  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
+  version "4.18.1"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.18.1.tgz#ff2b66c1f6326d59513de2407bf881439812771c"
+  integrity sha512-dMInicTPVE8d1e5otfwmmjlxkZoUpiVLwyeTdUsi/Caj/gfzzblBcCE5sRHV/AsjuCmxWrte2TNGSYuCeCq+0Q==
 
 log-symbols@^6.0.0:
   version "6.0.0"
@@ -6594,9 +6594,9 @@ tapable@^2.3.0:
   integrity sha512-1MOpMXuhGzGL5TTCZFItxCc0AARf1EZFQkGqMm7ERKj8+Hgr5oLvJOVFcC+lRmR8hCe2S3jC4T5D7Vg/d7/fhA==
 
 tar@^7.4.3, tar@^7.5.2:
-  version "7.5.2"
-  resolved "https://registry.npmjs.org/tar/-/tar-7.5.2.tgz"
-  integrity sha512-7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==
+  version "7.5.13"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-7.5.13.tgz#0d214ed56781a26edc313581c0e2d929ceeb866d"
+  integrity sha512-tOG/7GyXpFevhXVh8jOPJrmtRpOTsYqUIkVdVooZYJS/z8WhfQUX8RJILmeuJNinGAMSu1veBr4asSHFt5/hng==
   dependencies:
     "@isaacs/fs-minipass" "^4.0.0"
     chownr "^3.0.0"
