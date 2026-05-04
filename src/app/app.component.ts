@@ -17,6 +17,7 @@ import 'khiops-visualization';
 export class AppComponent {
   localFileContents: any;
   linkFile: string = '';
+  selectTabName: string = 'MODELING';
 
   @ViewChild('visualizationComponent', {
     static: false,
@@ -37,7 +38,12 @@ export class AppComponent {
   ngOnInit(): void {
     this.route.queryParamMap.subscribe((params) => {
       this.urlParam = params.get('url');
+      const tabName = params.get('selectTabName');
+      if (tabName) {
+        this.selectTabName = tabName;
+      }
       if (this.urlParam) {
+        this.extractSelectTabNameFromUrl(this.urlParam);
         this.getDataFromUrl(this.decodeRawKhiopsString(this.urlParam));
       }
     });
@@ -70,6 +76,7 @@ export class AppComponent {
             //@ts-ignore
             this.visualizationComponent?.nativeElement.setConfig({
               showProjectTab: false,
+              selectTabName: this.selectTabName,
             });
             //@ts-ignore
             this.visualizationComponent?.nativeElement.setDatas(jsonData);
@@ -103,7 +110,20 @@ export class AppComponent {
   }
 
   openFromUrl() {
+    this.extractSelectTabNameFromUrl(this.linkFile);
     this.getDataFromUrl(this.decodeRawKhiopsString(this.linkFile));
+  }
+
+  extractSelectTabNameFromUrl(url: string) {
+    try {
+      const parsed = new URL(url);
+      const tabName = parsed.searchParams.get('selectTabName');
+      if (tabName) {
+        this.selectTabName = tabName;
+      }
+    } catch {
+      // not a valid URL, keep current value
+    }
   }
 
   openFromFile() {

@@ -45,7 +45,7 @@
 }
 
 .home .input {
-  padding: 30px;
+  padding: 30px 30px 0 30px;
 }
 
 .home .btn-footer {
@@ -57,6 +57,14 @@
 .home .link {
   border: 0.125rem solid #333;
   margin: 15px;
+
+  p {
+    font-size: 12px;
+    margin: 0 10px 30px 10px;
+    font-style: italic;
+    font-style: italic;
+    word-break: break-word;
+  }
 }
 
 .home input {
@@ -75,7 +83,9 @@
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
-  transition: border-color 0.2s ease-in-out, outline-offset 0.2s ease-in-out;
+  transition:
+    border-color 0.2s ease-in-out,
+    outline-offset 0.2s ease-in-out;
   width: 400px;
 }
 
